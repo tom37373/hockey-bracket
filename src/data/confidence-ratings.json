@@ -1,0 +1,562 @@
+[
+  {
+    "familyMemberId": "1",
+    "teamId": 1,
+    "rating": 10
+  },
+  {
+    "familyMemberId": "1",
+    "teamId": 2,
+    "rating": 1
+  },
+  {
+    "familyMemberId": "1",
+    "teamId": 3,
+    "rating": 4
+  },
+  {
+    "familyMemberId": "1",
+    "teamId": 4,
+    "rating": 6
+  },
+  {
+    "familyMemberId": "1",
+    "teamId": 5,
+    "rating": 8
+  },
+  {
+    "familyMemberId": "1",
+    "teamId": 6,
+    "rating": 5
+  },
+  {
+    "familyMemberId": "1",
+    "teamId": 7,
+    "rating": 2
+  },
+  {
+    "familyMemberId": "1",
+    "teamId": 8,
+    "rating": 3
+  },
+  {
+    "familyMemberId": "1",
+    "teamId": 9,
+    "rating": 9
+  },
+  {
+    "familyMemberId": "1",
+    "teamId": 10,
+    "rating": 4
+  },
+  {
+    "familyMemberId": "1",
+    "teamId": 11,
+    "rating": 6
+  },
+  {
+    "familyMemberId": "1",
+    "teamId": 12,
+    "rating": 3
+  },
+  {
+    "familyMemberId": "1",
+    "teamId": 13,
+    "rating": 7
+  },
+  {
+    "familyMemberId": "1",
+    "teamId": 14,
+    "rating": 2
+  },
+  {
+    "familyMemberId": "1",
+    "teamId": 15,
+    "rating": 5
+  },
+  {
+    "familyMemberId": "1",
+    "teamId": 16,
+    "rating": 1
+  },
+  {
+    "familyMemberId": "2",
+    "teamId": 1,
+    "rating": 6
+  },
+  {
+    "familyMemberId": "2",
+    "teamId": 2,
+    "rating": 3
+  },
+  {
+    "familyMemberId": "2",
+    "teamId": 3,
+    "rating": 4
+  },
+  {
+    "familyMemberId": "2",
+    "teamId": 4,
+    "rating": 10
+  },
+  {
+    "familyMemberId": "2",
+    "teamId": 5,
+    "rating": 8
+  },
+  {
+    "familyMemberId": "2",
+    "teamId": 6,
+    "rating": 5
+  },
+  {
+    "familyMemberId": "2",
+    "teamId": 7,
+    "rating": 2
+  },
+  {
+    "familyMemberId": "2",
+    "teamId": 8,
+    "rating": 1
+  },
+  {
+    "familyMemberId": "2",
+    "teamId": 9,
+    "rating": 5
+  },
+  {
+    "familyMemberId": "2",
+    "teamId": 10,
+    "rating": 9
+  },
+  {
+    "familyMemberId": "2",
+    "teamId": 11,
+    "rating": 2
+  },
+  {
+    "familyMemberId": "2",
+    "teamId": 12,
+    "rating": 4
+  },
+  {
+    "familyMemberId": "2",
+    "teamId": 13,
+    "rating": 3
+  },
+  {
+    "familyMemberId": "2",
+    "teamId": 14,
+    "rating": 7
+  },
+  {
+    "familyMemberId": "2",
+    "teamId": 15,
+    "rating": 1
+  },
+  {
+    "familyMemberId": "2",
+    "teamId": 16,
+    "rating": 6
+  },
+  {
+    "familyMemberId": "3",
+    "teamId": 1,
+    "rating": 9
+  },
+  {
+    "familyMemberId": "3",
+    "teamId": 2,
+    "rating": 2
+  },
+  {
+    "familyMemberId": "3",
+    "teamId": 3,
+    "rating": 6
+  },
+  {
+    "familyMemberId": "3",
+    "teamId": 4,
+    "rating": 4
+  },
+  {
+    "familyMemberId": "3",
+    "teamId": 5,
+    "rating": 8
+  },
+  {
+    "familyMemberId": "3",
+    "teamId": 6,
+    "rating": 5
+  },
+  {
+    "familyMemberId": "3",
+    "teamId": 7,
+    "rating": 1
+  },
+  {
+    "familyMemberId": "3",
+    "teamId": 8,
+    "rating": 3
+  },
+  {
+    "familyMemberId": "3",
+    "teamId": 9,
+    "rating": 10
+  },
+  {
+    "familyMemberId": "3",
+    "teamId": 10,
+    "rating": 6
+  },
+  {
+    "familyMemberId": "3",
+    "teamId": 11,
+    "rating": 3
+  },
+  {
+    "familyMemberId": "3",
+    "teamId": 12,
+    "rating": 1
+  },
+  {
+    "familyMemberId": "3",
+    "teamId": 13,
+    "rating": 7
+  },
+  {
+    "familyMemberId": "3",
+    "teamId": 14,
+    "rating": 5
+  },
+  {
+    "familyMemberId": "3",
+    "teamId": 15,
+    "rating": 4
+  },
+  {
+    "familyMemberId": "3",
+    "teamId": 16,
+    "rating": 2
+  },
+  {
+    "familyMemberId": "4",
+    "teamId": 1,
+    "rating": 5
+  },
+  {
+    "familyMemberId": "4",
+    "teamId": 2,
+    "rating": 3
+  },
+  {
+    "familyMemberId": "4",
+    "teamId": 3,
+    "rating": 10
+  },
+  {
+    "familyMemberId": "4",
+    "teamId": 4,
+    "rating": 4
+  },
+  {
+    "familyMemberId": "4",
+    "teamId": 5,
+    "rating": 8
+  },
+  {
+    "familyMemberId": "4",
+    "teamId": 6,
+    "rating": 6
+  },
+  {
+    "familyMemberId": "4",
+    "teamId": 7,
+    "rating": 1
+  },
+  {
+    "familyMemberId": "4",
+    "teamId": 8,
+    "rating": 2
+  },
+  {
+    "familyMemberId": "4",
+    "teamId": 9,
+    "rating": 5
+  },
+  {
+    "familyMemberId": "4",
+    "teamId": 10,
+    "rating": 2
+  },
+  {
+    "familyMemberId": "4",
+    "teamId": 11,
+    "rating": 9
+  },
+  {
+    "familyMemberId": "4",
+    "teamId": 12,
+    "rating": 3
+  },
+  {
+    "familyMemberId": "4",
+    "teamId": 13,
+    "rating": 6
+  },
+  {
+    "familyMemberId": "4",
+    "teamId": 14,
+    "rating": 4
+  },
+  {
+    "familyMemberId": "4",
+    "teamId": 15,
+    "rating": 7
+  },
+  {
+    "familyMemberId": "4",
+    "teamId": 16,
+    "rating": 1
+  },
+  {
+    "familyMemberId": "5",
+    "teamId": 1,
+    "rating": 7
+  },
+  {
+    "familyMemberId": "5",
+    "teamId": 2,
+    "rating": 2
+  },
+  {
+    "familyMemberId": "5",
+    "teamId": 3,
+    "rating": 3
+  },
+  {
+    "familyMemberId": "5",
+    "teamId": 4,
+    "rating": 6
+  },
+  {
+    "familyMemberId": "5",
+    "teamId": 5,
+    "rating": 9
+  },
+  {
+    "familyMemberId": "5",
+    "teamId": 6,
+    "rating": 4
+  },
+  {
+    "familyMemberId": "5",
+    "teamId": 7,
+    "rating": 1
+  },
+  {
+    "familyMemberId": "5",
+    "teamId": 8,
+    "rating": 5
+  },
+  {
+    "familyMemberId": "5",
+    "teamId": 9,
+    "rating": 6
+  },
+  {
+    "familyMemberId": "5",
+    "teamId": 10,
+    "rating": 10
+  },
+  {
+    "familyMemberId": "5",
+    "teamId": 11,
+    "rating": 1
+  },
+  {
+    "familyMemberId": "5",
+    "teamId": 12,
+    "rating": 4
+  },
+  {
+    "familyMemberId": "5",
+    "teamId": 13,
+    "rating": 8
+  },
+  {
+    "familyMemberId": "5",
+    "teamId": 14,
+    "rating": 5
+  },
+  {
+    "familyMemberId": "5",
+    "teamId": 15,
+    "rating": 3
+  },
+  {
+    "familyMemberId": "5",
+    "teamId": 16,
+    "rating": 2
+  },
+  {
+    "familyMemberId": "7",
+    "teamId": 1,
+    "rating": 8
+  },
+  {
+    "familyMemberId": "7",
+    "teamId": 2,
+    "rating": 3
+  },
+  {
+    "familyMemberId": "7",
+    "teamId": 3,
+    "rating": 4
+  },
+  {
+    "familyMemberId": "7",
+    "teamId": 4,
+    "rating": 6
+  },
+  {
+    "familyMemberId": "7",
+    "teamId": 5,
+    "rating": 7
+  },
+  {
+    "familyMemberId": "7",
+    "teamId": 6,
+    "rating": 2
+  },
+  {
+    "familyMemberId": "7",
+    "teamId": 7,
+    "rating": 5
+  },
+  {
+    "familyMemberId": "7",
+    "teamId": 8,
+    "rating": 1
+  },
+  {
+    "familyMemberId": "7",
+    "teamId": 9,
+    "rating": 10
+  },
+  {
+    "familyMemberId": "7",
+    "teamId": 10,
+    "rating": 3
+  },
+  {
+    "familyMemberId": "7",
+    "teamId": 11,
+    "rating": 6
+  },
+  {
+    "familyMemberId": "7",
+    "teamId": 12,
+    "rating": 1
+  },
+  {
+    "familyMemberId": "7",
+    "teamId": 13,
+    "rating": 9
+  },
+  {
+    "familyMemberId": "7",
+    "teamId": 14,
+    "rating": 5
+  },
+  {
+    "familyMemberId": "7",
+    "teamId": 15,
+    "rating": 4
+  },
+  {
+    "familyMemberId": "7",
+    "teamId": 16,
+    "rating": 2
+  },
+  {
+    "familyMemberId": "8",
+    "teamId": 1,
+    "rating": 10
+  },
+  {
+    "familyMemberId": "8",
+    "teamId": 2,
+    "rating": 1
+  },
+  {
+    "familyMemberId": "8",
+    "teamId": 3,
+    "rating": 4
+  },
+  {
+    "familyMemberId": "8",
+    "teamId": 4,
+    "rating": 7
+  },
+  {
+    "familyMemberId": "8",
+    "teamId": 5,
+    "rating": 3
+  },
+  {
+    "familyMemberId": "8",
+    "teamId": 6,
+    "rating": 6
+  },
+  {
+    "familyMemberId": "8",
+    "teamId": 7,
+    "rating": 5
+  },
+  {
+    "familyMemberId": "8",
+    "teamId": 8,
+    "rating": 2
+  },
+  {
+    "familyMemberId": "8",
+    "teamId": 9,
+    "rating": 6
+  },
+  {
+    "familyMemberId": "8",
+    "teamId": 10,
+    "rating": 3
+  },
+  {
+    "familyMemberId": "8",
+    "teamId": 11,
+    "rating": 8
+  },
+  {
+    "familyMemberId": "8",
+    "teamId": 12,
+    "rating": 1
+  },
+  {
+    "familyMemberId": "8",
+    "teamId": 13,
+    "rating": 5
+  },
+  {
+    "familyMemberId": "8",
+    "teamId": 14,
+    "rating": 9
+  },
+  {
+    "familyMemberId": "8",
+    "teamId": 15,
+    "rating": 4
+  },
+  {
+    "familyMemberId": "8",
+    "teamId": 16,
+    "rating": 2
+  }
+]

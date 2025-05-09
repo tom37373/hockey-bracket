@@ -1,0 +1,18 @@
+[
+  { "id": 1, "name": "Toronto Maple Leafs", "conference": "Eastern", "division": "Atlantic", "seed": 1, "isEliminated": false },
+  { "id": 2, "name": "Ottawa Senators", "conference": "Eastern", "division": "Atlantic", "seed": 8, "isEliminated": true },
+  { "id": 3, "name": "Tampa Bay Lightning", "conference": "Eastern", "division": "Atlantic", "seed": 4, "isEliminated": true },
+  { "id": 4, "name": "Florida Panthers", "conference": "Eastern", "division": "Atlantic", "seed": 5, "isEliminated": false },
+  { "id": 5, "name": "Washington Capitals", "conference": "Eastern", "division": "Metropolitan", "seed": 2, "isEliminated": false },
+  { "id": 6, "name": "Carolina Hurricanes", "conference": "Eastern", "division": "Metropolitan", "seed": 7, "isEliminated": false },
+  { "id": 7, "name": "Montreal Canadiens", "conference": "Eastern", "division": "Metropolitan", "seed": 3, "isEliminated": true },
+  { "id": 8, "name": "New Jersey Devils", "conference": "Eastern", "division": "Metropolitan", "seed": 6, "isEliminated": true },
+  { "id": 9, "name": "Winnipeg Jets", "conference": "Western", "division": "Central", "seed": 1, "isEliminated": false },
+  { "id": 10, "name": "Dallas Stars", "conference": "Western", "division": "Central", "seed": 8, "isEliminated": false },
+  { "id": 11, "name": "Colorado Avalanche", "conference": "Western", "division": "Central", "seed": 4, "isEliminated": true },
+  { "id": 12, "name": "St. Louis Blues", "conference": "Western", "division": "Central", "seed": 5, "isEliminated": true },
+  { "id": 13, "name": "Vegas Golden Knights", "conference": "Western", "division": "Pacific", "seed": 2, "isEliminated": false },
+  { "id": 14, "name": "Edmonton Oilers", "conference": "Western", "division": "Pacific", "seed": 7, "isEliminated": false },
+  { "id": 15, "name": "Los Angeles Kings", "conference": "Western", "division": "Pacific", "seed": 3, "isEliminated": false },
+  { "id": 16, "name": "Minnesota Wild", "conference": "Western", "division": "Pacific", "seed": 6, "isEliminated": false }
+]
