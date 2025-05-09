@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { Team } from "@/types"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -51,7 +52,7 @@ export default function LiveScores() {
         const teamsData = await teamsResponse.json()
         
         // Create a map of team IDs to team names
-        const teamMap = new Map(teamsData.map((team: any) => [team.id, team.name]))
+        const teamMap = new Map(teamsData.map((team: Team) => [team.id, team.name]))
         
         // Fetch live games
         const liveResponse = await fetch('/api/games?status=live')

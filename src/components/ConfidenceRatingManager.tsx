@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { BracketMatchup } from "@/types"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Button } from "@/components/ui/button"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
@@ -29,7 +30,8 @@ type ConfidenceRating = {
 export default function ConfidenceRatingManager() {
   const [familyMembers, setFamilyMembers] = useState<FamilyMember[]>([])
   const [teams, setTeams] = useState<Team[]>([])
-  const [bracketMatchups, setBracketMatchups] = useState<any[]>([])
+  // We use bracketMatchups indirectly for sorting teams, but don't need to track it in state
+  // const [bracketMatchups, setBracketMatchups] = useState<BracketMatchup[]>([])
   const [ratings, setRatings] = useState<ConfidenceRating[]>([])
   const [selectedMemberId, setSelectedMemberId] = useState<string>("")
   const [isLoading, setIsLoading] = useState(true)
@@ -66,24 +68,25 @@ export default function ConfidenceRatingManager() {
           throw new Error('Failed to fetch bracket matchups')
         }
         const matchupsData = await matchupsResponse.json()
-        setBracketMatchups(matchupsData)
+        // We don't need to store the matchups in state anymore
+        // setBracketMatchups(matchupsData)
         
         // Sort teams based on bracket order
         const bracketTeamIds: number[] = []
         
         // First get all team IDs from round 1 matchups in order
         matchupsData
-          .filter((matchup: any) => matchup.round === 1)
-          .sort((a: any, b: any) => a.position - b.position)
-          .forEach((matchup: any) => {
+          .filter((matchup: BracketMatchup) => matchup.round === 1)
+          .sort((a: BracketMatchup, b: BracketMatchup) => a.position - b.position)
+          .forEach((matchup: BracketMatchup) => {
             if (matchup.team1Id) bracketTeamIds.push(matchup.team1Id)
             if (matchup.team2Id) bracketTeamIds.push(matchup.team2Id)
           })
         
         // Then add any teams from later rounds that might not be in round 1
         matchupsData
-          .filter((matchup: any) => matchup.round > 1)
-          .forEach((matchup: any) => {
+          .filter((matchup: BracketMatchup) => matchup.round > 1)
+          .forEach((matchup: BracketMatchup) => {
             if (matchup.team1Id && !bracketTeamIds.includes(matchup.team1Id)) {
               bracketTeamIds.push(matchup.team1Id)
             }
@@ -127,7 +130,7 @@ export default function ConfidenceRatingManager() {
     }
     
     fetchData()
-  }, [])
+  }, [selectedMemberId])
   
   // Fetch ratings when selected member changes
   useEffect(() => {

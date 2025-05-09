@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { ChevronUp, ChevronDown, RefreshCw } from "lucide-react"
 import { useBracketSimulationStore } from "@/stores/bracketSimulationStore"
 import { Team, BracketMatchup, FamilyMember } from "@/types"
+import { ConfidenceRating } from "@/utils/data"
 
 // Local type for matchups with team objects
 type Matchup = BracketMatchup & {
@@ -95,10 +96,10 @@ export default function TournamentBracket() {
           const ratingsData = await ratingsResponse.json()
           
           // Create a map of team IDs to confidence ratings
-          const ratingsMap = new Map(ratingsData.map((rating: any) => [rating.teamId, rating.rating]))
+          const ratingsMap = new Map(ratingsData.map((rating: ConfidenceRating) => [rating.teamId, rating.rating]))
           
           // Add confidence ratings to teams
-          const teamsWithRatings = teamsData.map((team: any) => ({
+          const teamsWithRatings = teamsData.map((team: Team) => ({
             ...team,
             confidenceRating: ratingsMap.get(team.id) || 0
           })) as Team[]
@@ -106,9 +107,9 @@ export default function TournamentBracket() {
           setTeams(teamsWithRatings)
           
           // Process matchups to include team objects
-          const processedMatchups = matchupsData.map((matchup: any) => {
-            const team1 = matchup.team1Id ? teamsWithRatings.find((t: any) => t.id === matchup.team1Id) : undefined
-            const team2 = matchup.team2Id ? teamsWithRatings.find((t: any) => t.id === matchup.team2Id) : undefined
+          const processedMatchups = matchupsData.map((matchup: BracketMatchup) => {
+            const team1 = matchup.team1Id ? teamsWithRatings.find((t: Team) => t.id === matchup.team1Id) : undefined
+            const team2 = matchup.team2Id ? teamsWithRatings.find((t: Team) => t.id === matchup.team2Id) : undefined
             
             return {
               ...matchup,
@@ -147,10 +148,10 @@ export default function TournamentBracket() {
         const ratingsData = await ratingsResponse.json()
         
         // Create a map of team IDs to confidence ratings
-        const ratingsMap = new Map(ratingsData.map((rating: any) => [rating.teamId, rating.rating]))
+        const ratingsMap = new Map(ratingsData.map((rating: ConfidenceRating) => [rating.teamId, rating.rating]))
         
         // Add confidence ratings to teams
-        const teamsWithRatings = teams.map((team: any) => ({
+        const teamsWithRatings = teams.map((team: Team) => ({
           ...team,
           confidenceRating: ratingsMap.get(team.id) || 0
         })) as Team[]
@@ -159,8 +160,8 @@ export default function TournamentBracket() {
         
         // Update matchups with new team ratings
         const updatedMatchups = matchups.map((matchup) => {
-          const team1 = matchup.team1?.id ? teamsWithRatings.find((t: any) => t.id === matchup.team1?.id) : undefined
-          const team2 = matchup.team2?.id ? teamsWithRatings.find((t: any) => t.id === matchup.team2?.id) : undefined
+          const team1 = matchup.team1?.id ? teamsWithRatings.find((t: Team) => t.id === matchup.team1?.id) : undefined
+          const team2 = matchup.team2?.id ? teamsWithRatings.find((t: Team) => t.id === matchup.team2?.id) : undefined
           
           return {
             ...matchup,

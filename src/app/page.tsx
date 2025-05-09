@@ -1,5 +1,4 @@
 import Link from "next/link";
-import LiveScores from "@/components/LiveScores";
 import TeamRatings from "@/components/TeamRatings";
 import TournamentBracket from "@/components/TournamentBracket";
 import BracketOdds from "@/components/BracketOdds";

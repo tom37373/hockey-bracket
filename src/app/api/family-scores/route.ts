@@ -2,8 +2,7 @@ import { NextResponse } from 'next/server';
 import { 
   getFamilyMembers, 
   getConfidenceRatings, 
-  getBracketMatchups,
-  getTeamById 
+  getBracketMatchups
 } from '@/utils/data';
 
 export async function GET() {

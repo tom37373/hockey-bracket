@@ -1,5 +1,6 @@
 import { create } from 'zustand'
 import { BracketMatchup, FamilyMember } from '@/types'
+import { ConfidenceRating } from '@/utils/data'
 
 // Types for scores and odds
 export type FamilyScore = {
@@ -33,7 +34,7 @@ interface BracketSimulationState {
   resetSimulation: () => void
   toggleSimulationMode: () => void
   setFamilyMembers: (members: FamilyMember[]) => void
-  setConfidenceRatings: (ratings: any[]) => void
+  setConfidenceRatings: (ratings: ConfidenceRating[]) => void
   saveSimulatedMatchups: () => Promise<boolean>
   
   // Calculation functions
@@ -188,7 +189,7 @@ export const useBracketSimulationStore = create<BracketSimulationState>((set, ge
     });
     
     // Populate with ratings
-    ratings.forEach((r: any) => {
+    ratings.forEach((r: ConfidenceRating) => {
       if (ratingsByMember[r.familyMemberId]) {
         ratingsByMember[r.familyMemberId][r.teamId] = r.rating;
       }
@@ -476,7 +477,7 @@ function updateNextRoundMatchup(matchups: BracketMatchup[], currentMatchup: Brac
   const winnerId = currentMatchup.winnerId
   
   // Find the winning team object
-  let winningTeam = currentMatchup.team1Id === winnerId ? currentMatchup.team1 : currentMatchup.team2
+  const winningTeam = currentMatchup.team1Id === winnerId ? currentMatchup.team1 : currentMatchup.team2
   
   // Determine if this team should be team1 or team2 in the next matchup
   // Even positions go to team2, odd positions go to team1

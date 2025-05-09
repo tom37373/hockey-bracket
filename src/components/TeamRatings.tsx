@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import { BracketMatchup } from "@/types"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
@@ -37,7 +38,8 @@ type FamilyRatings = {
 export default function TeamRatings() {
   const [filter, setFilter] = useState("all")
   const [teams, setTeams] = useState<Team[]>([])
-  const [bracketMatchups, setBracketMatchups] = useState<any[]>([])
+  // We use matchups data for sorting teams, but don't need to track it in state
+  // const [bracketMatchups, setBracketMatchups] = useState<BracketMatchup[]>([])
   const [familyMembers, setFamilyMembers] = useState<FamilyMember[]>([])
   const [teamRatings, setTeamRatings] = useState<FamilyRatings>({})
   const [isLoading, setIsLoading] = useState(true)
@@ -60,24 +62,25 @@ export default function TeamRatings() {
           throw new Error('Failed to fetch bracket matchups')
         }
         const matchupsData = await matchupsResponse.json()
-        setBracketMatchups(matchupsData)
+        // We don't need to store the matchups in state anymore
+        // setBracketMatchups(matchupsData)
         
         // Sort teams based on bracket order
         const bracketTeamIds: number[] = []
         
         // First get all team IDs from round 1 matchups in order
         matchupsData
-          .filter((matchup: any) => matchup.round === 1)
-          .sort((a: any, b: any) => a.position - b.position)
-          .forEach((matchup: any) => {
+          .filter((matchup: BracketMatchup) => matchup.round === 1)
+          .sort((a: BracketMatchup, b: BracketMatchup) => a.position - b.position)
+          .forEach((matchup: BracketMatchup) => {
             if (matchup.team1Id) bracketTeamIds.push(matchup.team1Id)
             if (matchup.team2Id) bracketTeamIds.push(matchup.team2Id)
           })
         
         // Then add any teams from later rounds that might not be in round 1
         matchupsData
-          .filter((matchup: any) => matchup.round > 1)
-          .forEach((matchup: any) => {
+          .filter((matchup: BracketMatchup) => matchup.round > 1)
+          .forEach((matchup: BracketMatchup) => {
             if (matchup.team1Id && !bracketTeamIds.includes(matchup.team1Id)) {
               bracketTeamIds.push(matchup.team1Id)
             }
